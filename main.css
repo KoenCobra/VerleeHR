@@ -19,6 +19,10 @@ dd {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role=list],
 ol[role=list] {
@@ -33,8 +37,10 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
+  padding-inline: 2rem;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: "Bodoni Moda", serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -71,4 +77,21 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+.hero-section {
+  height: 100vh;
+}
+.hero-section nav {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  margin-top: 2rem;
+}
+.hero-section nav img {
+  height: 100%;
+}
+.hero-section nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }/*# sourceMappingURL=main.css.map */

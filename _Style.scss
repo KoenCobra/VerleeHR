@@ -1,1 +1,19 @@
+.hero-section {
+  height: 100vh;
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    margin-top: 2rem;
+    img {
+      height: 100%;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}
