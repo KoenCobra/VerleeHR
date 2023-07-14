@@ -37,10 +37,10 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  padding-inline: 2rem;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: "Bodoni Moda", serif;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -78,20 +78,81 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.hero-section {
-  height: 100vh;
+.container {
+  max-width: 1400px;
+  margin-inline: auto;
 }
-.hero-section nav {
+.container .navbar nav {
   display: flex;
   justify-content: space-between;
-  height: 3rem;
-  margin-top: 2rem;
+  align-items: center;
+  padding-block: 1rem;
+  position: sticky;
 }
-.hero-section nav img {
-  height: 100%;
+.container .navbar nav img {
+  height: 60px;
 }
-.hero-section nav ul {
+.container .navbar nav ul {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 1rem;
+}
+.container .navbar nav .contact-btn {
+  border: 0;
+  outline: none;
+  background-color: #0c1943;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 1.3px;
+}
+.container .navbar nav .contact-btn:hover {
+  background-color: #dd8e08;
+}
+.container .hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 85vh;
+}
+.container .hero-section .title-section {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-inline: auto;
+}
+.container .hero-section .title-section .title {
+  text-align: left;
+  line-height: 90px;
+  padding-bottom: 3rem;
+  max-width: 13ch;
+}
+.container .hero-section .title-section .hr-text {
+  color: #ac6e06;
+}
+.container .hero-section .title-section .sub-title {
+  font-size: 1.6rem;
+  max-width: 19ch;
+}
+.container .hero-section .title-section .speciality {
+  position: relative;
+}
+.container .hero-section .title-section .speciality::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: -0.3rem;
+  left: 0;
+  right: 0;
+  background-color: #ac6e06;
+}
+.container .hero-section .hero-img {
+  background-image: url("Images/call.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */
