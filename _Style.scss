@@ -23,11 +23,11 @@ $gold: #ac6e06;
         font-size: 1rem;
       }
       .contact-btn {
-        border: 0;
+        border: 1px solid $purple;
         outline: none;
-        background-color: $purple;
-        color: white;
-        padding: 1rem 2rem;
+        background-color: transparent;
+        color: $purple;
+        padding: 0.7rem 1.7rem;
         border-radius: 10px;
         margin-left: 1rem;
         cursor: pointer;
@@ -35,7 +35,8 @@ $gold: #ac6e06;
         letter-spacing: 1.3px;
 
         &:hover {
-          background-color: lighten($gold, 10%);
+          background-color: $purple;
+          color: white;
         }
       }
     }

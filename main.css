@@ -99,11 +99,11 @@ select {
   font-size: 1rem;
 }
 .container .navbar nav .contact-btn {
-  border: 0;
+  border: 1px solid #0c1943;
   outline: none;
-  background-color: #0c1943;
-  color: white;
-  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #0c1943;
+  padding: 0.7rem 1.7rem;
   border-radius: 10px;
   margin-left: 1rem;
   cursor: pointer;
@@ -111,7 +111,8 @@ select {
   letter-spacing: 1.3px;
 }
 .container .navbar nav .contact-btn:hover {
-  background-color: #dd8e08;
+  background-color: #0c1943;
+  color: white;
 }
 .container .hero-section {
   display: grid;
