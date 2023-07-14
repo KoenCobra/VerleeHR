@@ -30,7 +30,7 @@ ol[role=list] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 
@@ -99,7 +99,8 @@ select {
   font-size: 1rem;
 }
 .container .navbar nav .contact-btn {
-  border: 1px solid #0c1943;
+  border: 1px solid #ac6e06;
+  text-decoration: none;
   outline: none;
   background-color: transparent;
   color: #0c1943;
@@ -111,7 +112,7 @@ select {
   letter-spacing: 1.3px;
 }
 .container .navbar nav .contact-btn:hover {
-  background-color: #0c1943;
+  background-color: #ac6e06;
   color: white;
 }
 .container .hero-section {
@@ -156,4 +157,120 @@ select {
   background-size: cover;
   background-position: center;
   border-radius: 20px;
+}
+
+.contact-section {
+  padding: 3rem 0;
+}
+.contact-section .contact-text {
+  padding-left: 20px;
+}
+.contact-section .text {
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+.contact-section form .form-row {
+  display: flex;
+  margin: 32px 0;
+}
+.contact-section form .form-row .input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+.contact-section form .form-row .textarea {
+  height: 70px;
+}
+.contact-section .input-data input,
+.contact-section .textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+.contact-section .input-data input:focus ~ label,
+.contact-section .textarea textarea:focus ~ label,
+.contact-section .input-data input:valid ~ label,
+.contact-section .textarea textarea:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #ac6e06;
+}
+.contact-section .textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+.contact-section .input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.contact-section .textarea label {
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.contact-section .input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.contact-section .input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #ac6e06;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.contact-section .input-data input:focus ~ .underline:before,
+.contact-section .input-data input:valid ~ .underline:before,
+.contact-section .textarea textarea:focus ~ .underline:before,
+.contact-section .textarea textarea:valid ~ .underline:before {
+  transform: scale(1);
+}
+.contact-section .submit-btn {
+  border: 1px solid #ac6e06;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+  color: #0c1943;
+  padding: 0.7rem 1.7rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 1.3px;
+  margin-left: 20px;
+}
+.contact-section .submit-btn:hover {
+  background-color: #ac6e06;
+  color: white;
+}
+@media (max-width: 700px) {
+  .contact-section .text {
+    font-size: 30px;
+  }
+  .contact-section form {
+    padding: 10px 0 0 0;
+  }
+  .contact-section form .form-row {
+    display: block;
+  }
+  .contact-section form .form-row .input-data {
+    margin: 35px 0 !important;
+  }
+  .contact-section .submit-btn .input-data {
+    width: 40% !important;
+  }
 }/*# sourceMappingURL=main.css.map */
