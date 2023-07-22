@@ -2,92 +2,326 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Verlee HR</title>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/c3e5479c48.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
-      <div class="container">
-        <div class="navbar">
-          <header>
-            <nav>
-              <div class="logo">
-                <img src="Images/Logo.png" alt="Logo" />
-              </div>
-              <ul>
-                <li>Services</li>
-                <li>Info</li>
-                <a href="#contact" class="contact-btn">CONTACT</a>
-              </ul>
-            </nav>
-          </header>
-        </div>
-        <div class="hero-section">
-          <div class="title-section">
-            <h1 class="title">Growing your enterprise is your specialty.</h1>
-            <p class="sub-title">
-              Managing your <span class="hr-text">HR</span> is
-              <span class="speciality"> our specialty.</span>
+    <!-- navbar -->
+    <!-- nav button -->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </span>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <ul class="nav-items">
+        <li><a href="index.html" class="nav-link">home</a></li>
+        <li><a href="skills.html" class="nav-link">skills</a></li>
+        <li><a href="about.html" class="nav-link">about</a></li>
+        <li><a href="products.html" class="nav-link">products</a></li>
+      </ul>
+    </nav>
+    <!-- header  -->
+    <header class="header">
+      <div class="banner">
+        <h2>Your HR is our passion</h2>
+        <h1>Uw partner in hr & rekrutering</h1>
+        <a href="" class="btn banner-btn">
+          <img src="Images/Logo.png" alt="" />
+        </a>
+      </div>
+    </header>
+    <!-- end of header  -->
+    <div class="content-divider"></div>
+    <!-- skills section -->
+    <section class="skills clearfix">
+      <!-- single skill -->
+      <article class="skill">
+        <span class="skill-icon">
+          <img src="Images/management-removebg-preview.png" alt="" />
+        </span>
+        <h4 class="skill-title">HR Management</h4>
+        <p class="skill-text">
+          In nauwe samenwerking met het management staan wij jou bij met raad.
+        </p>
+      </article>
+      <!-- end of single skill -->
+      <!-- single skill -->
+      <article class="skill">
+        <span class="skill-icon">
+          <img src="Images/cv-removebg-preview.png" alt="" />
+        </span>
+        <h4 class="skill-title">Rekrutering</h4>
+        <p class="skill-text">
+          Op lange of korte termijn bijstaan bij het rekruteringsproces.
+        </p>
+      </article>
+      <!-- end of single skill -->
+      <!-- single skill -->
+      <article class="skill">
+        <span class="skill-icon">
+          <img src="Images/intern-removebg-preview.png" alt="" />
+        </span>
+        <h4 class="skill-title">Uitbouw en opvolging</h4>
+        <p class="skill-text">
+          (Tijdelijke) ondersteuning interne HR / Recruitment afdeling.
+        </p>
+      </article>
+      <!-- end of single skill -->
+      <!-- single skill -->
+      <article class="skill">
+        <span class="skill-icon">
+          <img src="Images/optimize-removebg-preview.png" alt="" />
+        </span>
+        <h4 class="skill-title">Optimalisatie processen</h4>
+        <p class="skill-text">
+          Optimalisatie van instroom-, retentie en uitstroomprocessen.
+        </p>
+      </article>
+
+      <!-- end of single skill -->
+    </section>
+    <article class="opti-section section-center">
+      <div>
+        <h4 class="selection-header">
+          Optimalisatie van instroom-, retentie en uitstroomprocessen.
+        </h4>
+        <p>
+          Onze taak omvat het bepalen en optimaliseren van je HR-structuur en
+          het uitwerken of verbeteren van de missie, visie en kernwaarden van je
+          organisatie. We streven ernaar structuur aan te brengen en groeipijnen
+          aan te pakken of te voorkomen, terwijl we ook bestaande procedures
+          herzien en herschrijven.
+          <br /><br />
+          We analyseren je huidige algemene strategie en people management om de
+          effectiviteit ervan te beoordelen en mogelijke verbeteringen voor te
+          stellen. Een cruciaal onderdeel van onze aanpak is om ervoor te zorgen
+          dat de juiste persoon op de juiste plaats terechtkomt. We
+          identificeren problemen en bieden concrete, no-nonsense oplossingen.
+          <br /><br />
+          Daarbij stellen we vragen zoals: "Is het huidige organisatiemodel
+          geschikt voor de toekomst of is er behoefte aan een andere structuur?"
+          en "Wat worden de overlegstructuren binnen je bedrijf?" We richten ons
+          niet alleen op team- en organisatieontwikkeling, maar ook op de
+          individuele ontwikkeling van elke medewerker.
+        </p>
+      </div>
+    </article>
+
+    <!-- services -->
+    <section class="services">
+      <!-- section title -->
+      <div class="section-title services-title">
+        <h2>our services</h2>
+      </div>
+      <!-- end of section title -->
+      <div class="section-center clearfix">
+        <!-- single card -->
+        <article class="service-card">
+          <!-- img container -->
+          <div class="service-img-container">
+            <!-- img -->
+            <img
+              src="Images/manage.png"
+              class="service-img"
+              alt="single service"
+            />
+            <!-- service icon -->
+            <!-- <span class="service-icon"> -->
+            <!-- <i class="fas fa-mortar-pestle fa-fw"></i> -->
+            <!-- </span> -->
+          </div>
+          <!-- service info -->
+          <div class="service-info">
+            <h4>HARD HR</h4>
+            <p>
+              Uitvoeren, coördineren en structureren van de
+              personeelsadministratie (verlofregeling, ziekte en afwezigheid en
+              de loonadministratie). Bij specifieke vragen hebben wij een
+              gespecialiseerd freelance medewerker ter beschikking.
             </p>
           </div>
-          <div class="hero-img"></div>
-        </div>
-        <div id="contact" class="contact-section">
-          <div class="contact-text">
-            <h2>Contact</h2>
-            <i class="fa-light fa-circle-envelope"></i>
+        </article>
+        <!--end of  single card -->
+        <!-- single card -->
+        <article class="service-card">
+          <!-- img container -->
+          <div class="service-img-container">
+            <!-- img -->
+            <img
+              src="Images/recruitment.png"
+              class="service-img"
+              alt="single service"
+            />
+            <!-- service icon -->
+            <!-- <span class="service-icon">
+              <i class="fas fa-home fa-fw"></i>
+            </span> -->
           </div>
-          <form
-            action="https://formkeep.com/f/564cf5686dd1"
-            accept-charset="UTF-8"
-            enctype="multipart/form-data"
-            method="POST"
-          >
-            <div class="form-row">
-              <div class="input-data">
-                <input type="text" required />
-                <div class="underline"></div>
-                <label for="">Voornaam</label>
-              </div>
-              <div class="input-data">
-                <input type="text" required />
-                <div class="underline"></div>
-                <label for="">Naam</label>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="input-data">
-                <input type="text" required />
-                <div class="underline"></div>
-                <label for="">Email</label>
-              </div>
-              <div class="input-data">
-                <input type="tel" required />
-                <div class="underline"></div>
-                <label for="">Telefoon</label>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="input-data textarea">
-                <textarea rows="8" cols="80" required></textarea>
-                <br />
-                <div class="underline"></div>
-                <label for="">Bericht</label>
-                <br />
-              </div>
-            </div>
-            <button class="submit-btn">Verstuur</button>
-          </form>
-        </div>
+          <!-- service info -->
+          <div class="service-info">
+            <h4>Employer branding</h4>
+            <p>
+              Het uitwerken van het onboardingsproces is gericht op het
+              aantrekkelijker maken van ons bedrijf voor nieuw personeel,
+              terwijl we tegelijkertijd ook zeker aandacht besteden aan de
+              behoeften en betrokkenheid van onze huidige medewerkers.
+            </p>
+          </div>
+        </article>
+        <!--end of  single card -->
+        <!-- single card -->
+        <article class="service-card">
+          <!-- img container -->
+          <div class="service-img-container">
+            <!-- img -->
+            <img
+              src="Images/opleiding.png"
+              class="service-img"
+              alt="single service"
+            />
+            <!-- service icon -->
+          </div>
+          <!-- service info -->
+          <div class="service-info">
+            <h4>Learning & development</h4>
+            <p>
+              Door proactief te denken en te reageren, streven we ernaar om
+              gelijke tred te houden met de hedendaagse trends, en dit omvat ook
+              het bieden van opleidingen en het richten van onze aandacht op de
+              behoeften van onze medewerkers.
+            </p>
+          </div>
+        </article>
+        <!--end of  single card -->
       </div>
-    </main>
+    </section>
+    <!-- end of services -->
+    <article class="selection-section section-center">
+      <div>
+        <h4 class="selection-header">Werving en selectie</h4>
+        <p>
+          We hechten groot belang aan het menselijke aspect en blijven
+          voortdurend gefocust op het behouden en aantrekken van (nieuwe)
+          medewerkers. Ons doel is om je bij te staan op de lange termijn in het
+          wervingsproces, maar we zijn ook bereid om specifieke knelpunten aan
+          te pakken.
+          <br />
+          <br />
+
+          In dit proces ontwikkelen we een rekruteringsprocedure van A tot Z,
+          waarbij we het volledige beleid in kaart brengen op basis van een
+          gedetailleerde behoefte- en noodanalyse. Deel van dit proces is ook
+          het creëren en aantrekkelijker maken van functie- en
+          profielomschrijvingen. We zetten op maat gemaakte
+          rekruteringscampagnes op, afgestemd op de doelgroep en het beoogde
+          publiek.
+          <br />
+          <br />
+          Daarnaast zijn we betrokken bij het sourcen en screenen van potentiële
+          kandidaten. Op het gebied van people management nemen we de taak op
+          ons om je wervingsteam op te bouwen en te beheren. Dit alles met het
+          doel om de beste talenten aan te trekken en te behouden.
+        </p>
+      </div>
+    </article>
+
+    <section class="testimonial-section">
+      <figure class="snip1533">
+        <figcaption>
+          <blockquote>
+            <p>
+              Lesley is een ideale teamplayer die de extra mile niet schuwt. Zij
+              is steeds bereikbaar. Ze neemt overwogen beslissingen rekening
+              houdend met de belangen van het bedrijf en haar collega's. Haar
+              team draagt haar op handen.
+            </p>
+          </blockquote>
+          <h3>Filip P.</h3>
+          <h4>CEO WorkForce</h4>
+        </figcaption>
+      </figure>
+      <figure class="snip1533">
+        <figcaption>
+          <blockquote>
+            <p>
+              Ik kan de samenwerking met Verlée HR omschrijven als constructief
+              en zeer professioneel. Ze durven out of the box te denken en gaan
+              steeds met veel enthousiasme te werk.
+            </p>
+          </blockquote>
+          <h3>Sandy D.P.</h3>
+          <h4>Zaakvoerder Select HR</h4>
+        </figcaption>
+      </figure>
+      <figure class="snip1533">
+        <figcaption>
+          <blockquote>
+            <p>
+              Gedreven en vastberaden, de woorden welke in mij opkomen als ik
+              Lesley zou beschrijven. Haar vermogen en wilskracht bij het
+              aannemen van verschillende en uitdagende projecten is ontzettend
+              knap om waar te nemen. Het was een plezier m met haar samen te
+              werken.
+            </p>
+          </blockquote>
+          <h3>Elien B.</h3>
+          <h4>Eigenaar JE</h4>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- contact -->
+    <section class="contact">
+      <div class="section-center clearfix">
+        <!-- contact info -->
+
+        <!-- contact form -->
+        <article class="contact-form">
+          <h3>contact us</h3>
+          <form>
+            <div class="form-group">
+              <!-- inputs -->
+              <input
+                type="text"
+                placeholder="naam"
+                class="form-control"
+                name="naam"
+              />
+              <input
+                type="email"
+                placeholder="email"
+                class="form-control"
+                name="email"
+              />
+              <textarea
+                name="bericht"
+                placeholder="bericht"
+                class="form-control"
+                rows="5"
+              ></textarea>
+            </div>
+            <!-- button -->
+            <button type="submit" class="submit-btn btn">submit here</button>
+          </form>
+        </article>
+      </div>
+    </section>
+    <!-- end of contact -->
+
+    <!-- footer -->
+
+    <script src="app.js"></script>
   </body>
 </html>
