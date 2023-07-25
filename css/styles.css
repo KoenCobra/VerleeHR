@@ -252,7 +252,7 @@ Header
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/call.webp") center/cover no-repeat fixed;
+    url("../images/call_11zon.webp") center/cover no-repeat fixed;
   position: relative;
   /* animation */
   overflow-x: hidden;
