@@ -229,12 +229,18 @@ Navbar
 }
 .nav-link {
   display: block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 0.25rem 1rem;
   text-transform: uppercase;
   letter-spacing: var(--spacing);
   color: var(--clr-grey-5);
   transition: var(--transition);
+}
+
+@media (min-width: 1200px) {
+  .nav-link {
+    font-size: 1.1rem;
+  }
 }
 .nav-link:hover {
   background: var(--clr-primary-light);
