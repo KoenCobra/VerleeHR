@@ -16,24 +16,61 @@
   <body>
     <!-- navbar -->
     <!-- nav button -->
-    <span click="openSidePanel" class="nav-btn" id="nav-btn">
+    <span onclick="openSidePanel()" class="nav-btn" id="nav-btn">
       <i class="fas fa-bars"></i>
     </span>
     <nav class="navbar" id="navbar">
       <div class="navbar-header">
-        <span class="nav-close" id="nav-close">
+        <span onclick="closeSidePanel()" class="nav-close" id="nav-close">
           <i class="fas fa-times"></i>
         </span>
       </div>
       <ul class="nav-items">
-        <li><a href="index.html" class="nav-link">home</a></li>
-        <li><a href="skills.html" class="nav-link">skills</a></li>
-        <li><a href="about.html" class="nav-link">about</a></li>
-        <li><a href="products.html" class="nav-link">products</a></li>
+        <li>
+          <a onclick="closeSidePanel()" href="#home" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a onclick="closeSidePanel()" href="#skills" class="nav-link"
+            >Skills</a
+          >
+        </li>
+        <li>
+          <a onclick="closeSidePanel()" href="#optimalisatie" class="nav-link"
+            >Optimalisatie</a
+          >
+        </li>
+        <li>
+          <a onclick="closeSidePanel()" href="#services" class="nav-link"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a onclick="closeSidePanel()" href="#werving" class="nav-link"
+            >Werving & selectie</a
+          >
+        </li>
+        <li>
+          <a onclick="closeSidePanel()" href="#pricing" class="nav-link"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a onclick="closeSidePanel()" href="#testimonials" class="nav-link"
+            >Testimonials</a
+          >
+        </li>
+        <li>
+          <a onclick="closeSidePanel()" href="#about" class="nav-link">About</a>
+        </li>
+        <li>
+          <a onclick="closeSidePanel()" href="#contact" class="nav-link"
+            >Contact</a
+          >
+        </li>
       </ul>
     </nav>
     <!-- header  -->
-    <header class="header">
+    <header id="home" class="header">
       <div class="banner">
         <h2>We rise by lifting others</h2>
         <h1>Uw partner in hr & rekrutering</h1>
@@ -45,7 +82,7 @@
     <!-- end of header  -->
     <div class="content-divider"></div>
     <!-- skills section -->
-    <section class="skills clearfix">
+    <section id="skills" class="skills clearfix">
       <!-- single skill -->
       <article class="skill">
         <span class="skill-icon">
@@ -92,7 +129,7 @@
 
       <!-- end of single skill -->
     </section>
-    <article class="opti-section section-center">
+    <article id="optimalisatie" class="opti-section section-center">
       <div>
         <h4 class="selection-header">
           Optimalisatie van instroom-, retentie en uitstroomprocessen.
@@ -120,7 +157,7 @@
     </article>
 
     <!-- services -->
-    <section class="services">
+    <section id="services" class="services">
       <!-- section title -->
       <div class="section-title services-title">
         <h2>our services</h2>
@@ -208,7 +245,7 @@
       </div>
     </section>
     <!-- end of services -->
-    <article class="selection-section section-center">
+    <article id="werving" class="selection-section section-center">
       <div>
         <h4 class="selection-header">Werving en selectie</h4>
         <p>
@@ -237,7 +274,7 @@
       </div>
     </article>
 
-    <section class="pricing">
+    <section id="pricing" class="pricing">
       <div class="section-title pricing-title">
         <h2>Pricing</h2>
       </div>
@@ -291,7 +328,7 @@
       </div>
     </section>
 
-    <div class="section-title testimonials-title">
+    <div id="testimonials" class="section-title testimonials-title">
       <h2>Testimonials</h2>
     </div>
     <section class="testimonial-section">
@@ -339,7 +376,7 @@
       </figure>
     </section>
 
-    <div class="about-section">
+    <div id="about" class="about-section">
       <div class="about">
         <div class="about-img">
           <img src="Images/aboutME.png" alt="" />
@@ -369,7 +406,7 @@
     </div>
 
     <!-- contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="section-center clearfix">
         <!-- contact info -->
 

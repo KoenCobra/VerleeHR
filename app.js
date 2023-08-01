@@ -1,11 +1,9 @@
-const bars = document.querySelector(".nav-btn");
-const navClose = document.querySelector(".nav-close");
 const sidePanel = document.querySelector(".navbar");
 
-bars.addEventListener("click", () => {
+function openSidePanel() {
   sidePanel.classList.add("showNav");
-});
+}
 
-navClose.addEventListener("click", () => {
+function closeSidePanel() {
   sidePanel.classList.remove("showNav");
-});
+}
