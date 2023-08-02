@@ -222,7 +222,7 @@ Navbar
   transition: var(--transition);
 }
 .nav-close:hover {
-  color: #bb2525;
+  color: var(--clr-primary-light);
 }
 .nav-items {
   list-style-type: none;
