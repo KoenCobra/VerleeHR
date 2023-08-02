@@ -514,6 +514,16 @@ Contact
 .contact {
   background: var(--clr-grey-10);
 }
+
+.contact .section-center {
+  padding-top: 0;
+}
+
+@media (min-width: 1200px) {
+  .contact .section-center {
+    padding-top: 5rem;
+  }
+}
 .contact-form,
 .contact-info {
   margin: 1rem 0;
