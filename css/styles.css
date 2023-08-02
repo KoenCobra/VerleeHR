@@ -234,7 +234,7 @@ Navbar
   text-transform: uppercase;
   letter-spacing: var(--spacing);
   color: var(--clr-grey-5);
-  transition: var(--transition);
+  transition: all 0.2s linear;
 }
 
 @media (min-width: 1200px) {
@@ -243,7 +243,6 @@ Navbar
   }
 }
 .nav-link:hover {
-  background: var(--clr-primary-light);
   color: var(--clr-primary);
   padding-left: 1.5rem;
   border-left: 0.25rem solid var(--clr-primary);
